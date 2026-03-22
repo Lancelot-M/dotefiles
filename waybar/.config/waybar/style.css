@@ -1,0 +1,86 @@
+/* GLOBAL */
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 10px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* BARRE PRINCIPALE */
+window#waybar {
+    background: 0;
+}
+
+/* BLOCS LEFT / CENTER / RIGHT (ARRONDIS ICI) */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(20, 50, 20, 0.85);
+    margin: 1px 3px;
+    padding: 0px 2px;
+    border-radius: 3px; 
+}
+
+/* MODULES INDIVIDUELS (PLUS D'ARRONDIS) */
+.modules-left > widget,
+.modules-center > widget,
+.modules-right > widget {
+    margin: 0 6px;
+    padding: 6px 10px;
+    color: #cdeccd;
+    border-radius: 0; /* ❌ supprimé */
+    background: transparent; /* important */
+}
+
+/* HOVER */
+.modules-left > widget:hover,
+.modules-center > widget:hover,
+.modules-right > widget:hover {
+    background: rgba(20, 50, 20, 0.85);
+    border-radius: 8px; /* léger arrondi uniquement au hover */
+}
+
+/* WORKSPACES */
+#workspaces button {
+    margin: 2px;
+    border-radius: 2px;
+    background: rgba(20, 50, 20, 0.85);
+    color: #88c999;
+}
+
+#workspaces button.active {
+    background: #2f6f3e;
+    color: white;
+}
+
+#workspaces button:hover {
+    background: #3f8f4e;
+}
+
+/* MODULES */
+#cpu,
+#memory,
+#battery,
+#pulseaudio,
+#backlight,
+#network {
+    min-width: 25px;
+}
+
+/* BATTERIE */
+#battery.warning {
+    color: #f1c40f;
+}
+
+#battery.critical {
+    color: #e74c3c;
+}
+
+/* TOOLTIP */
+tooltip {
+    background: rgba(15, 30, 15, 0.95);
+    border-radius: 10px;
+    padding: 8px;
+    color: #d4ffd4;
+}

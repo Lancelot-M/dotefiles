@@ -1,0 +1,44 @@
+{
+    // General Settings
+    "layer": "top",
+    "position": "top",
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+    // Load Modules
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+    // Modules Left
+    "modules-left": [
+	"clock" 
+        //"custom/appmenu",
+	//"hyprland/window",
+        //"wlr/taskbar",
+        //"group/quicklinks",
+        //"custom/nowplaying",        
+        //"custom/empty" 
+    ], 
+    // Modules Center 
+    "modules-center": [
+        "hyprland/workspaces"
+	//"custom/empty"
+    ],
+    // Modules Right    
+    "modules-right": [
+        //"custom/updates",
+        "pulseaudio",
+        "backlight",
+        "bluetooth",
+        "network",
+        "battery",
+        "group/hardware"
+        //"group/tools",
+        //"tray",
+        //"custom/notification"
+        //"custom/exit",
+        //"custom/ml4w-welcome"
+    ]
+}
