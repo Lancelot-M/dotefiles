@@ -5,9 +5,6 @@ local Plug = vim.fn['plug#']
 local config_path = vim.fn.stdpath("config")  -- chemin absolu de ~/.config/nvim
 package.path = config_path .. "/?.lua;" .. package.path
 
-
-vim.g.mapleader = " "
-
 vim.call('plug#begin', vim.fn.stdpath('data') .. '/plugged')
 
 -- Installation des plugins

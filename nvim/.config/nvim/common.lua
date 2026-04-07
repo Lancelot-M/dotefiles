@@ -6,6 +6,7 @@ vim.wo.number = true
 --  Sert à accéder ou définir des **variables globales**.
 vim.g.mouse = 'a'
 vim.g.maplocalleader = " "  -- pour les mappings locauox
+vim.g.mapleader = " "
 
 -- Sert à manipuler des **options globales ou locales**, de façon plus flexible.
 vim.opt.encoding="utf-8"
