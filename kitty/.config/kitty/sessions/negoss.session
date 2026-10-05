@@ -1,0 +1,26 @@
+# 5 Claude sessions started from augmented, each pinned to a NegOSS worktree.
+# `cd` is per tab in kitty sessions, so each tab sets it.
+# The trailing `exec zsh` keeps the tab open after Claude exits.
+layout tall
+
+new_tab wt1
+cd ~/Projets/augmented
+launch --title wt1 zsh -ic 'claude "/worktree negoss/wt1"; exec zsh'
+
+new_tab wt2
+cd ~/Projets/augmented
+launch --title wt2 zsh -ic 'claude "/worktree negoss/wt2"; exec zsh'
+
+new_tab wt3
+cd ~/Projets/augmented
+launch --title wt3 zsh -ic 'claude "/worktree negoss/wt3"; exec zsh'
+
+new_tab wt4
+cd ~/Projets/augmented
+launch --title wt4 zsh -ic 'claude "/worktree negoss/wt4"; exec zsh'
+
+new_tab wt5
+cd ~/Projets/augmented
+launch --title wt5 zsh -ic 'claude "/worktree negoss/wt5"; exec zsh'
+
+focus_tab 0
