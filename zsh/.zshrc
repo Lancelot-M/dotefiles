@@ -103,3 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export EDITOR=vim
+
+# opencode
+export PATH=/home/tolek/.opencode/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin/bin:$PATH"
