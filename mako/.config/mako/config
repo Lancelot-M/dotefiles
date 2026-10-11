@@ -1,0 +1,4 @@
+# Hide notifications automatically after 5 seconds, including those whose
+# applications request an unlimited display time.
+default-timeout=5000
+ignore-timeout=1
